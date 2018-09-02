@@ -1,0 +1,17 @@
+\documentclass[UTF8]{ctexart} % 这是文类，一个典型的中文模板
+%\xeCJKsetup{CJKmath=true} % cmd下运行texdoc xecjk分析此代码的作用
+\usepackage{amsmath,amssymb,amscd,tikz} % 这些是宏包
+\usepackage[paperwidth=9cm,paperheight=9cm,left=.2cm,%此处换行
+right=.2cm,top=1.5cm,bottom=.5cm]{geometry} % 此宏包设置了页面
+\begin{document} % 以上是导言区，以下是正文
+	\definecolor{fgs}{RGB}{194,122,109} \pagecolor{fgs} %养眼豆沙绿
+	\section{Happy \TeX ing} %\TeX{}:防止忽略空格（另外也可以在命令后面紧跟一个\␣ 命令(反斜线加空格)），大小写敏感
+	这是一个简单的\TeX 模板。请保存为UTF-8，用Xe \LaTeX 编译： \\
+	点菜单栏 【Tools】  $\to $ 【 Comands】 $\to $ 【 Xe \LaTeX 】
+	\[ \sin^2 \theta + \cos^2 \theta =1 \] % 行间公式
+	Happy \TeX ing.$n \in \mathbb{N}$
+	\begin{align} % 对齐公式组
+	    a^2+b^2 &= c^2 \\
+	    \mathrm{e}^{\mathrm{i}\pi} + 1 &=0
+	\end{align} % 我百分号是注释
+\end{document} % 模板结束
